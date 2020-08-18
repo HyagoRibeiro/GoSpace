@@ -42,7 +42,7 @@ function FormPage(props) {
                 <InfoTrip><strong>Planeta:</strong> {trip.planet}</InfoTrip>
                 <InfoTrip><strong>Data de partida:</strong> {trip.date}</InfoTrip>
                 <InfoTrip><strong>Duração da viagem:</strong> {trip.durationInDays} dias</InfoTrip>
-                <InfoTrip><strong>{trip.description}</strong></InfoTrip>
+                <InfoTrip>{trip.description}</InfoTrip>
               </TripSingle>
               <ButtonDetailTrip onClick={() => goToApply(trip.id, trip.name)}>Inscreva-se</ButtonDetailTrip>
             </ContainerTrip>

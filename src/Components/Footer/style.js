@@ -6,6 +6,14 @@ export const ContainerFooter = styled.footer `
     height: 40px;
     width: 100%;
     color: #fff;
+    @media(max-width: 480px) {
+        color:#000;
+        background-color: #fff;
+        height: 30px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
 `;
 
 export const TextFooter = styled.p `
