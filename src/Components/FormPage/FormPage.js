@@ -6,7 +6,7 @@ import { useParams } from "react-router";
 
 import Form from './../Form/Form';
 import BackgroundImage from './../../images/background-home.jpg';
-import { Background, ContainerHome, Overlay, ButtonBackToHome } from './style';
+import { Background, ContainerHome, Overlay, ButtonBackToHome, ButtonBackToHomeMobile } from './style';
 
 function FormPage(props) {
   const history = useHistory();
@@ -32,6 +32,7 @@ function FormPage(props) {
           <ButtonBackToHome onClick={goToHome}>Voltar</ButtonBackToHome>
           <h2>{pathParams.tripName}</h2>
           <Form tripsList={listTrips} />
+          <ButtonBackToHomeMobile onClick={goToHome}>Voltar</ButtonBackToHomeMobile>
         </ContainerHome>
       </Overlay>
     </Background>

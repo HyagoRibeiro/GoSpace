@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import BackgroundImage from './../../images/background-home.jpg';
 
 
 export const Background = styled.main `
@@ -9,6 +8,9 @@ export const Background = styled.main `
   box-sizing: border-box;
   color: #fff;
   align-items: center;
+  @media(max-width: 480px) {
+    height: 100vh;
+  }
 `;
 
 export const Overlay = styled.div `
@@ -18,6 +20,9 @@ export const Overlay = styled.div `
   height: 100%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.65);
+  @media(max-width: 480px) {
+    height: 100vh;
+  }
 `;
 
 export const ContainerCreateTrip = styled.div `
@@ -28,6 +33,9 @@ export const ContainerCreateTrip = styled.div `
   flex-direction: column;
   overflow: auto;
   padding: 10px 50px;
+  @media(max-width: 480px) {
+    height: 100vh;
+  }
   
 `;
 
@@ -50,6 +58,9 @@ export const ButtonBack = styled.button `
         color: #000;
         box-shadow: 0px 0px 5px 0px rgba(255,255,255, 0.3);
       }
+    @media(max-width:480px) {
+      display: none;
+    }
 `;
 
 export const ContainerForm = styled.form `

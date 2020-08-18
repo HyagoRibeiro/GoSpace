@@ -3,6 +3,7 @@ import { useHistory } from "react-router-dom";
 import axios from 'axios';
 import './scrollbar.css';
 
+import Footer  from './../Footer/Footer';
 import BackgroundImage from './../../images/background-home.jpg';
 import { Background, ContainerListUser, Overlay, ButtonApply, ContainerTrip, TripSingle, TitleTrip,
   InfoTrip, ButtonDetailTrip } from './styled';
@@ -42,13 +43,14 @@ function FormPage(props) {
                 <InfoTrip><strong>Planeta:</strong> {trip.planet}</InfoTrip>
                 <InfoTrip><strong>Data de partida:</strong> {trip.date}</InfoTrip>
                 <InfoTrip><strong>Duração da viagem:</strong> {trip.durationInDays} dias</InfoTrip>
-                <InfoTrip><strong>{trip.description}</strong></InfoTrip>
+                <InfoTrip>{trip.description}</InfoTrip>
               </TripSingle>
               <ButtonDetailTrip onClick={() => goToApply(trip.id, trip.name)}>Inscreva-se</ButtonDetailTrip>
             </ContainerTrip>
           );
         })}
         </ContainerListUser>
+        <Footer />
       </Overlay>
     </Background>
   );

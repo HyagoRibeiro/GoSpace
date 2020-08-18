@@ -8,12 +8,21 @@ export const Background = styled.main `
   box-sizing: border-box;
   color: #fff;
   align-items: center;
+  @media(max-width: 480px) {
+    background-image: none;
+    background-color: #fff;
+    width: 100vw;
+  }
 `;
 
 export const Overlay = styled.div `
   height: 100%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.85);
+  @media(max-width: 480px) {
+    background-color: rgba(0, 0, 0, 0);
+    width: 100vw;
+  }
 `;
 
 export const ContainerListAdm = styled.div `
@@ -25,11 +34,22 @@ export const ContainerListAdm = styled.div `
   margin: 0 auto;
   overflow: auto;
   padding: 10px 50px;
+  @media(max-width: 480px) {
+    background-color: rgba(0,0,0,0);
+    width: 95vw;
+    height: 85vh;
+    overflow: auto ;
+    padding: 0 10px;
+
+  }
   
 `;
 
 export const DetailInfoTrip = styled.div `
   margin: 0;
+  @media(max-width: 480px) {
+    flex-direction: column;
+  }
 `;
 
 export const TitleInfoTrip = styled.h2 `
@@ -53,6 +73,9 @@ export const CandidateSingle = styled.div `
   margin-bottom: 15px;
   padding: 15px;
   width: 20%;
+  @media(max-width: 480px) {
+    width: 100%;
+  }
 `;
 
 export const TitleCandidates = styled.p `
@@ -132,5 +155,8 @@ export const ButtonBack = styled.button `
         background-color: #fff;
         color: #000;
         box-shadow: 0px 0px 5px 0px rgba(255,255,255,1);
+      }
+      @media(max-width: 480px) {
+        display: none;
       }
 `;
