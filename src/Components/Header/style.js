@@ -1,6 +1,4 @@
 import styled from 'styled-components';
-import { primary, secondary } from '../Color/style';
-
 
 export const ContainerHeader = styled.header `
 display: flex;
@@ -8,7 +6,7 @@ justify-content: space-between;
 align-items: center;
 width: 100vw;
 height: 6vh;
-background-color: ${primary};
+background-color: #fff;
 font-weight: bold;
 
 `;
@@ -29,7 +27,7 @@ font-weight: 700;
 transition: 200ms;
 cursor: pointer;
   :hover {
-    background-color: ${secondary};
+    background-color: #ffe647;
   }
 `;
 
@@ -44,7 +42,7 @@ font-weight: 700;
 transition: 200ms;
 cursor: pointer;
   :hover {
-    background-color: ${secondary};
+    background-color: #ffe647;
   }
 `;
 

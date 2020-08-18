@@ -34,9 +34,9 @@ function CreateTripPage(props) {
     }
 
     const handleForm = event => {
+      event.preventDefault();
       const token = window.localStorage.getItem("token");
       const [year, month, day] = form.date.split("-")
-      event.preventDefault();
       const body = {
         name: form.name,
         planet: form.planet,
@@ -62,7 +62,6 @@ function CreateTripPage(props) {
   
     };
   
-    
     const goToBack = () => {
       history.push("/listar-viagem")
     }

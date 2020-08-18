@@ -12,7 +12,6 @@ function FormPage(props) {
   const history = useHistory();
   const [listTrips, setListTrips] = useState([]);
   const pathParams = useParams();
-  console.log(pathParams)
   
     useEffect(() => {
       axios.get('https://us-central1-labenu-apis.cloudfunctions.net/labeX/hyago-turing/trips')

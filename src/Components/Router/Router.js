@@ -8,6 +8,7 @@ import TripDetailPage from './../TripDetailPage/TripDetailPage';
 import TripListUser from './../TripListUser/TripListUser';
 import Header from './../Header/Header';
 import FormPage from './../FormPage/FormPage';
+import Footer  from './../Footer/Footer';
 
 
 function Router() {
@@ -40,6 +41,7 @@ function Router() {
                 <h1>Error 404</h1>
             </Route>
         </Switch>
+        <Footer />
     </BrowserRouter>
   );
 }

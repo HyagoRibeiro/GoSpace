@@ -21,8 +21,6 @@ function FormPage(props) {
       })
     }, [])
 
-  console.log(listTrips)
-
   const goToApply = (tripId, tripName) => {
     history.push(`/formulario-inscricao/${tripId}/${tripName}`)
   }
