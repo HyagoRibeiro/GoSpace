@@ -52,4 +52,14 @@ export const ButtonEnter = styled.button `
       background-color: #fff;
       box-shadow: 0px 0px 5px 0px rgba(255,255,255,1);
     }
+
+  @media(max-width:480px) {
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+  }
+`;
+
+export const TitleTextHome = styled.h1 `
+    
 `;

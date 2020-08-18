@@ -7,6 +7,9 @@ export const ContainerForm = styled.form `
     width: 300px;
     height: 700px;
     justify-content: space-between;
+    @media(max-width: 480px) {
+      height: 600px;
+    }
 `;
 
 export const ButtonApply = styled.button `
@@ -25,6 +28,12 @@ export const ButtonApply = styled.button `
         color: #000;
         box-shadow: 0px 0px 5px 0px rgba(255,255,255, 0.3);
       }
+
+
+    @media(max-width: 480px) {
+      height: 45px;
+      width: 100%;
+    }
 `;
 
 export const TitleForm = styled.p `

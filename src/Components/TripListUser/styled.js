@@ -4,6 +4,7 @@ import styled from 'styled-components';
 export const Background = styled.main `
   background-image: url(${props => props.BackgroundImage});
   height: 94vh;
+  width:100vw;
   background-size: cover;
   box-sizing: border-box;
   color: #fff;
@@ -29,7 +30,7 @@ export const ContainerListUser = styled.div `
   @media(max-width: 480px) {
     background-color: rgba(0,0,0,0);
     width: 95vw;
-    height: 85vh;
+    height: 88vh;
     overflow: auto ;
     padding: 0 10px;
 

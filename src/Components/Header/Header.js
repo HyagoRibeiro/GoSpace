@@ -60,11 +60,17 @@ function Header() {
     setMenuMobile(!menuMobile);
   }
 
+  const goToCreateTripMobile = () => {
+    history.push("/criar-viagem")
+    setMenuMobile(!menuMobile);
+  }
+
   return (
     <>
       <MobileMenu>{menuMobile ? <IconMenu onClick={openMenuMobile} alt={'Icone'} src={menu}/> : <IconMenu onClick={openMenuMobile} alt={'Icone'} src={close}/>} </MobileMenu>
       {! menuMobile ? <ContainerMenu>
             <ItemMenu onClick={goToHomeMobile}><p>Home</p></ItemMenu>
+            {token !== null ? <ItemMenu onClick={goToCreateTripMobile}><p>Criar nova viagem</p></ItemMenu> : <></>}
             {token !== null ? <ItemMenu onClick={goToTripsMobile}><p>Lista de viagens</p></ItemMenu> : <></>}
             {token !== null ? <ItemMenu onClick={goToLogoutMobile}><p>Logout</p></ItemMenu> : 
             <ItemMenu onClick={goToLoginMobile}><p>Login</p></ItemMenu>}

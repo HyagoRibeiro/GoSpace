@@ -2,7 +2,7 @@ import React from 'react';
 import { useHistory } from "react-router-dom";
 
 import BackgroundImage from './../../images/background-home.jpg';
-import { Background, ContainerHome, Overlay, TextGroup, ButtonGroup, ButtonEnter } from './styled';
+import { Background, ContainerHome, Overlay, TextGroup, ButtonGroup, ButtonEnter, TitleTextHome } from './styled';
 
 function HomePage(props) {
   const history = useHistory();
@@ -17,7 +17,7 @@ function HomePage(props) {
       <Overlay>
         <ContainerHome>
           <TextGroup>
-            <h1>Faça a viagem interplanetária <br/>dos seus sonhos.</h1>
+            <TitleTextHome>Faça a viagem interplanetária <br/>dos seus sonhos.</TitleTextHome>
             <ButtonGroup>
               <ButtonEnter onClick={goToTrips}>Viagens</ButtonEnter>
             </ButtonGroup>

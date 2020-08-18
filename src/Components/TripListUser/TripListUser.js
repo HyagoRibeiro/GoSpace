@@ -3,6 +3,7 @@ import { useHistory } from "react-router-dom";
 import axios from 'axios';
 import './scrollbar.css';
 
+import Footer  from './../Footer/Footer';
 import BackgroundImage from './../../images/background-home.jpg';
 import { Background, ContainerListUser, Overlay, ButtonApply, ContainerTrip, TripSingle, TitleTrip,
   InfoTrip, ButtonDetailTrip } from './styled';
@@ -49,6 +50,7 @@ function FormPage(props) {
           );
         })}
         </ContainerListUser>
+        <Footer />
       </Overlay>
     </Background>
   );

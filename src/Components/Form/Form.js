@@ -92,7 +92,7 @@ function Form(props) {
           4. Qual a sua profissão?
           <InputQuestion
           required
-          pattern={"^.{10,}"}
+          pattern={"^.{4,}"}
           name="profession"
           type="text"
           value={form.profession}
