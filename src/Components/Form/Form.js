@@ -47,7 +47,6 @@ function Form(props) {
 
   const handleInputChange = event => {
     const { name, value } = event.target;
-
     onChange(name, value)
   }
 

@@ -1,9 +1,10 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import App from './App';
+import Router from './Components/Router/Router';
+
 
 test('renders learn react link', () => {
-  const { getByText } = render(<App />);
-  const linkElement = getByText(/learn react/i);
+  const { getByText } = render(<Router />);
+  const linkElement = getByText(/GoSpace/i);
   expect(linkElement).toBeInTheDocument();
 });

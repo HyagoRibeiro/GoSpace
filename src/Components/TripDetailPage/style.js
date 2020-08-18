@@ -17,7 +17,6 @@ export const Overlay = styled.div `
 `;
 
 export const ContainerListAdm = styled.div `
-  height: 80vh;
   width: 70vw;
   background-color: #fff;
   color: #000;
@@ -30,10 +29,11 @@ export const ContainerListAdm = styled.div `
 `;
 
 export const DetailInfoTrip = styled.div `
+  margin: 0;
 `;
 
 export const TitleInfoTrip = styled.h2 `
-
+  margin-bottom: 0;
 `;
 
 export const InfoTrip = styled.p `
@@ -58,8 +58,6 @@ export const CandidateSingle = styled.div `
 export const TitleCandidates = styled.p `
   font-weight: 600;
   font-size: 20px;
-  border-top: 1px solid #000;
-  padding-top: 20px;
 `;
 
 export const InfoCandidate = styled.p `

@@ -3,6 +3,7 @@ import { useHistory } from "react-router-dom";
 import { useParams } from "react-router";
 import React from 'react';
 import axios from 'axios';
+
 import './scrollbar.css';
 import BackgroundImage from './../../images/background-home.jpg';
 import { Background, Overlay, ContainerListAdm, DetailInfoTrip, TitleInfoTrip,
@@ -16,8 +17,6 @@ function TripDetailPage() {
   const tripDetail = useProtect(
   `https://us-central1-labenu-apis.cloudfunctions.net/labeX/hyago-turing/trip/${pathParams.tripId}`,
     {}, 'trip');
-
-  console.log(tripDetail.candidates)
 
   const approveOrReproved = (candidateId, trueOrFalse) => {
     const token = window.localStorage.getItem("token");
@@ -42,11 +41,9 @@ function TripDetailPage() {
 
   };
 
-
   const goToBack = () => {
       history.push("/listar-viagem")
   }
-
   
   return (
     <Background BackgroundImage={BackgroundImage}>
@@ -55,10 +52,6 @@ function TripDetailPage() {
         <ContainerListAdm className="scrollbar scrollbar-primary">
           <DetailInfoTrip>
             <TitleInfoTrip>{tripDetail.name}</TitleInfoTrip>
-            <InfoTrip>Planeta Destino: {tripDetail.planet}</InfoTrip>
-            <InfoTrip>Data de partida: {tripDetail.date}</InfoTrip>
-            <InfoTrip>Duração da viagem: {tripDetail.durationInDays}</InfoTrip>
-            <InfoTrip>Descrição: {tripDetail.description}</InfoTrip>
           </DetailInfoTrip>
             <TitleCandidates>Avaliação pendente</TitleCandidates>
           <CandidateGroup>

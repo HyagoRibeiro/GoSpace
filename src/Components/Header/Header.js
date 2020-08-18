@@ -30,7 +30,7 @@ function Header() {
 
   return (
     <ContainerHeader>
-        <Logo onClick={goToHome}>LabX</Logo>
+        <Logo onClick={goToHome}>GoSpace</Logo>
         <ButtonsGroup>
           {token !== null ? <ButtonTrips onClick={goToTrips}>Lista de viagens</ButtonTrips> : <></>}
           {token !== null ? <ButtonLogin onClick={goToLogout}>Logout</ButtonLogin> : 
